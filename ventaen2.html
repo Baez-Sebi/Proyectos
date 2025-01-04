@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shrtcut icon" href="iconodecine.webp">
+    <meta charset="UTF-8">
+    <title>Venta de Películas</title>
+    <link rel="stylesheet" href="vente.css">
+    
+</head>
+//*// Avengers //*//
+<body>
+    <center><h1>Hola Bienvenido al registro de su compra:)</h1>
+        <p>Antes de continuar con su compra le pedimos que porfavor inicie sesion en esta pagina...</p></center>
+    <center><div class="container">
+        <div class="form">
+            <h2>Iniciar Sesión</h2>
+            <form action="index.php" method="post">
+                <input type="text" name="username" placeholder="Nombre de usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit"><a href="mensj2.html">Iniciar Sesión</button></a>
+            </form>
+        </div>
+        <center><h2>Si no tenes cuenta, porfavor Create una en el formulario de "Registro"</h2></center>
+        <div class="form">
+            <h2>Registro</h2>
+            <form action="index.php" method="post">
+                <input type="text" name="new_username" placeholder="Nuevo nombre de usuario" required>
+                <input type="password" name="new_password" placeholder="Nueva contraseña" required>
+                <button type="submit"><a href="mnsj2.html">Registrarse</button></a>
+            </form>
+        </div>
+    </div></center>
+
+    <?php
+    session_start();
+
+    // Verificar el inicio de sesión
+    if (isset($_POST['username']) && isset($_POST['password'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        // ... (código de verificación del inicio de sesión)
+
+    }
+
+    // Verificar el inicio de sesión
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // En un entorno real, aquí verificarías en tu base de datos si las credenciales son correctas.
+    // Esta es solo una simulación simple.
+    if ($username === 'usuario' && $password === 'contrasena') {
+        $_SESSION['username'] = $username;
+        header("Location: bienvenida.php"); // Redirige al usuario a la página de bienvenida
+        exit();
+    } else {
+        echo 'Credenciales inválidas.';
+    }
+}
+
+
+    // Registro de usuario
+    if (isset($_POST['new_username']) && isset($_POST['new_password'])) {
+        $newUsername = $_POST['new_username'];
+        $newPassword = $_POST['new_password'];
+
+        // ... (código de registro de usuario)
+
+    }
+
+    // Registro de usuario
+if (isset($_POST['new_username']) && isset($_POST['new_password'])) {
+    $newUsername = $_POST['new_username'];
+    $newPassword = $_POST['new_password'];
+
+    // ... (código de registro de usuario)
+
+    header("Location: confirmacion_registro.php"); // Redirige al usuario a la página de confirmación de registro
+    exit();
+}
+
+    ?>
+</body>
+</html>

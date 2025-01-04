@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shrtcut icon" href="iconodecine.webp">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vente.css">
+    <title>Hola usuario</title>
+</head>
+<body>
+    <center><h1>¡¡¡Sesion iniciada Correctamente!!!</h1>
+    <h2>Llenate este formulario de compra porfavor:</h2>
+    <div class="purchase-form">
+        <u><h2>Detalles de Compra</h2></u>
+        <form id="payment-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Nombre_Propietario" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="text" name="card_number" placeholder="Número de tarjeta" required>
+            <input type="text" name="expiry_date" placeholder="Fecha de vencimiento (MM/YY)" required>
+            <input type="text" name="cvv" placeholder="CVV" required>
+            <button type="submit" id="pay-button">Pagar</button>
+        </form>
+        <div id="payment-confirmation" style="display: none;">
+            <h3>¡Pago Realizado!</h3>
+            <p>¡Gracias por tu compra!</p>
+            <center><button class="estyled-button"><a id="linke" href="tike7.html">Buscate las Entradas.</a></button></center>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('payment-form').style.display = 'none';
+            document.getElementById('payment-confirmation').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
