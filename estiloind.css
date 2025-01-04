@@ -1,0 +1,68 @@
+body{
+    background-image: url(IMG/cines-salas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(247, 19, 197);
+}
+
+#linke{
+    color: crimson;
+}
+
+.cinema-mode {
+    max-width: 10000px;
+    max-height: 560px;
+    overflow: hidden;
+}
+
+img {
+    width: 100vw; /* Alarga el GIF para ajustarse al ancho de la ventana */
+    display: block;
+}
+
+/* Estilos del botón */
+.estyled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b0b22;
+    color: rgb(19, 245, 132);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+    background-color: #ccc122;
+}
+
+footer {
+    background-image: url(IMG/degradado_de_color.png);
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.contact-info, .social-links {
+    padding: 10px;
+    text-align: center;
+}
+
+.social-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.feature img{
+    height: 380px;
+    width: 370px;
+}

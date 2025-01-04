@@ -1,0 +1,157 @@
+body {
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(212, 24, 150);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.movie-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.description, .trailer {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #000000;
+}
+
+trailer iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: rgb(21, 12, 145);
+}
+#xd{
+    position: absolute;
+    top: -9px; left:5%;
+    color: rgb(255, 255, 255);
+}
+
+.camara {
+    text-align: center;
+}
+
+.camara img {
+    height:500px;
+    width: auto;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.catalog2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie img {
+    max-width: 50%;
+    height: auto;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+footer {
+    background-color: rgb(56, 56, 56);
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info, .social-links {
+    padding: 10px;
+    text-align: center;
+}
+
+.social-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.feature img{
+    height: 380px;
+    width: 370px;
+}

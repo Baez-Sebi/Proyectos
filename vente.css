@@ -1,0 +1,420 @@
+body {
+    background-image: url(AnimatronicsCinema.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(241, 241, 241);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#color_l{
+    color: aqua;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: rgb(21, 12, 145);
+}
+
+.purchase-form {
+    background-color: rgb(40, 2, 253);
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.purchase-form h2 {
+    margin-bottom: 10px;
+}
+
+.purchase-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.purchase-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+#xd{
+    position: absolute;
+    top: -9px; left:5%;
+    color: rgb(255, 255, 255);
+}
+
+.camara {
+    text-align: center;
+}
+
+.camara img {
+    height:500px;
+    width: auto;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-listen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.moviel {
+    background-color: rgb(32, 28, 28);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.moviel img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.catalog2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie img {
+    max-width: 50%;
+    height: auto;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.wrap{
+	width: 1100px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 600;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 300px;
+	height: 350px;
+	background: #7931d6;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+    color: rgb(221, 243, 26);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(PRODUCT/remeramario.png);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(PRODUCT/dragonballremera.png);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(PRODUCT/remerafnaf.png);
+	background-size: cover;
+}
+.card4{
+    background-image: url(PRODUCT/remerameg.png);
+    background-size: cover;
+}
+
+.wrap2{
+	width: 1100px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 600;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 300px;
+	height: 350px;
+	background: #7931d6;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+    color: rgb(18, 185, 18);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card5{
+	background-image: url(IMG/marioj.png);
+	background-size: cover;
+}
+
+.card6{
+	background-image: url(IMG/bulmaf.png);
+	background-size: cover;
+}
+
+.card7{
+	background-image: url(IMG/foxy.png);
+	background-size: cover;
+}
+
+.product {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+footer {
+    background-image: url(IMG/degradado_de_color.png);
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info, .social-links {
+    padding: 10px;
+    text-align: center;
+}
+
+.social-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.feature img{
+    height: 380px;
+    width: 370px;
+}
